@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: rgb(29, 33, 39);
+      color: white;
+    }
+
+    .titleHead {
+      background-image: url(starrail.png) !important;
+      backdrop-filter: blur(6px);
+      color: white;
+      background-position: center;
+      padding: 85px;
+      text-align: center;
+      font-weight: 100;
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px rgb(97, 192, 255),
+        0 0 21px rgb(0, 173, 253),
+        0 0 42px rgb(0, 153, 255),
+        0 0 82px rgb(0, 153, 255),
+        0 0 92px rgb(0, 153, 255),
+        0 0 102px rgb(0, 153, 255),
+        0 0 151px rgb(0, 153, 255);
+    }
+
+    .fancyCard {
+      background-color: rgb(24, 24, 24);
+      color: white;
+      text-align: center;
+      transition: 100ms;
+      align-items: center;
+    }
+
+    .fancyCard:hover {
+      transform: translate3D(0, -1px, 0) scale(1.10);
+      transition: 100ms;
+    }
+
+    .navbar {
+      background-color: rgb(24, 24, 24);
+      color: white !important;
+    }
+
+    footer {
+      background-color: rgb(24, 24, 24);
+    }
+
+    .footerText {
+      color: white;
+      padding: 5px;
+    }
+
+    .categoryTitle {
+      color: white;
+      font-weight: bold;
+    }
+
+    .cartList {
+      color: black;
+    }
+
+    .card {
+      padding-top: 6px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body class="container-fluid bg-image">
+  <div class="row">
+    <nav class="navbar navbar-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img src="hsrlogo.png" alt="hsr logo" height="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#stickers">Stickers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#posters">Posters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#keychains">Keychains</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#stand">Stands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="company.html">About the Company</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="mb-5 titleHead">
+      <h1>Welcome to the Starlight Exchange</h1>
+    </div>
+    <section class="col-sm-9">
+      <div class="row mb-5">
+        <div class="col">
+          <h3 id="stickers">Herta's Space Stickers</h3>
+          <div class="row g-4">
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img src="https://cdn.donmai.us/original/65/74/65741936e563fbca81c5019e9a1ec324.png" alt="jys"
+                  height="170" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Snoozing</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 15.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Snoozing'
+                    data-prod_price="15">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img src="https://cdn.donmai.us/original/59/75/597573cb5e438b575034938c7d841eae.png" alt="yqb"
+                  height="170" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">No Money</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 15.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='No Money'
+                    data-prod_price="15">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img src="https://storage.googleapis.com/sticker-prod/uWsRnOqK7EzDjspnZ5Ct/14-1.png" alt="m7"
+                  height="170" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">March 7th</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 15.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='March 7th'
+                    data-prod_price="15">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img src="https://pbs.twimg.com/media/FVGrxHgVUAAK7A1.png" alt="fries" height="170" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Come Again?</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 15.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Come Again'
+                    data-prod_price="15">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img
+                  src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/honkai-star-rail-stickers-2/sticker_1.png?40baea015d977cb67175c784379fa69b&d=200x200"
+                  alt="fries" height="170" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Stelle Bell</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 15.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Stelle Bell'
+                    data-prod_price="15">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img src="https://pbs.twimg.com/media/FVGr5UsUsAAOAok.png" alt="fries" height="170" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Clara Heart</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 15.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Clara Heart'
+                    data-prod_price="15">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col">
+          <h3 id="posters">Jarilo Posters</h3>
+          <div class="row g-4">
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img
+                  src="https://assetsio.reedpopcdn.com/Light-Cone-Before-Dawn-Erudition-Jing-Yuan.jpg?width=414&quality=70&format=jpg&auto=webp"
+                  alt="aqua" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Poster 1</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 150.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Poster 1'
+                    data-prod_price="150">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img
+                  src="https://i.redd.it/high-quality-light-cone-art-feat-jing-yuan-blade-luocha-v0-wyv2vz29i5na1.jpg?width=1424&format=pjpg&auto=webp&s=63bf4d21cc9d6a4d7cd804fa8d08e1fbc4cb6a16"
+                  alt="ruby" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Poster 2</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 150.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Poster 2'
+                    data-prod_price="150">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img
+                  src="https://i.redd.it/high-quality-light-cone-art-feat-jing-yuan-blade-luocha-v0-tktaj6khi5na1.jpg?width=1414&format=pjpg&auto=webp&s=0cc06a8a94f9e8d9635890fe0886c7c45f5d3c59"
+                  alt="kana" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Poster 3</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 150.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Poster 3'
+                    data-prod_price="150">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img
+                  src="https://preview.redd.it/high-quality-light-cone-art-feat-jing-yuan-blade-luocha-v0-40rzab5fi5na1.jpg?width=640&crop=smart&auto=webp&s=9bf1a66356eb30ed99d9ba16d41d013f0a8b2ec2"
+                  alt="kana" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Poster 4</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 150.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Poster 4'
+                    data-prod_price="150">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img src="https://genshinlab.com/wp-content/uploads/2023/02/In-the-Night_honkailab_genshinlab.webp"
+                  alt="kana" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Poster 5</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 150.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Poster 5'
+                    data-prod_price="150">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img src="https://www.irvgame.com/wp-content/uploads/2023/05/Light-Cone-But-the-Battle-Isnt-Over.webp"
+                  alt="kana" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Poster 6</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 150.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Poster 6'
+                    data-prod_price="150">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col">
+          <h3 id="keychains">Xianzhou Keychains</h3>
+          <div class="row g-4">
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img
+                  src="https://regisbox.com/wp-content/uploads/2023/04/Cute-Honkai-Star-Rail-Keychains-Kawaii-Star-Rail-Phone-Charm-20.jpg"
+                  alt="set 1" height="170" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Set 1 (3 PCs.)</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 180.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Set 1 Keychains'
+                    data-prod_price="180">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img src="https://i.etsystatic.com/36620694/r/il/9a7419/4752360289/il_570xN.4752360289_53jp.jpg"
+                  alt="set 2" height="170" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Set 2 (3 PCs.)
+                  </h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 180.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Set 2 Keychains'
+                    data-prod_price="180">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img src="https://i.etsystatic.com/36620694/r/il/f9c8e5/4704127330/il_fullxfull.4704127330_5pdg.jpg"
+                  alt="set 3" height="170" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Set 3 (3 PCs.)</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 180.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Set 3 Keychains'
+                    data-prod_price="180">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img
+                  src="https://regisbox.com/wp-content/uploads/2023/04/Cute-Honkai-Star-Rail-Keychains-Kawaii-Star-Rail-Phone-Charm-21.jpg"
+                  alt="set 4" height="170" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Set 4 (3 PCs.)</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 180.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Set 4 Keychains'
+                    data-prod_price="180">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0754/9743/9554/products/Sba2ead9b54074961878c128e53b4bbeeg.jpg?v=1682454915&width=1946"
+                  alt="set 5" height="170">
+                <div class="card-body">
+                  <h5 class="card-title">Set 5 (4 PCs.)</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 250.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Set 5 Keychains'
+                    data-prod_price="250">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img
+                  src="https://ae01.alicdn.com/kf/Sf855131213414b48b4ca2c3946d40712j.jpg?width=800&height=800&hash=1600"
+                  alt="set 6" height="170">
+                <div class="card-body">
+                  <h5 class="card-title">Set 6 (4 PCs.)</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 250.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Set 6 Keychains'
+                    data-prod_price="250">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col">
+          <h3 id="stand">Stellaron Acrylic Stands</h3>
+          <div class="row g-4">
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img
+                  src="jingyuan.webp"
+                  alt="set 1" height="170" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Jing Yuan</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 300.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='JYuan Stand'
+                    data-prod_price="300">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img
+                  src="seele.webp"
+                  alt="set 2" height="170" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Seele
+                  </h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 300.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Seele Stand'
+                    data-prod_price="300">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img
+                  src="yanqing.webp"
+                  alt="set 3" height="170" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Yanqing</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 300.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Yanqing Stand'
+                    data-prod_price="300">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img
+                  src="asta.webp"
+                  alt="set 4" height="170" width="170">
+                <div class="card-body">
+                  <h5 class="card-title">Asta</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 300.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Asta Stand'
+                    data-prod_price="300">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img src="https://genshindb.org/wp-content/uploads/2023/03/Kafka-Splash-Art.webp" alt="set 5"
+                  height="170">
+                <div class="card-body">
+                  <h5 class="card-title">Kafka</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 300.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Kafka Stand'
+                    data-prod_price="300">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card fancyCard h-100">
+                <img src="https://genshindb.org/wp-content/uploads/2023/03/Herta-Splash-Art.webp" alt="set 6"
+                  height="170">
+                <div class="card-body">
+                  <h5 class="card-title">Herta</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Php 300.00</h6>
+                  <button class="btn btn-sm btn-secondary add-to-cart" data-prod_name='Herta Stand'
+                    data-prod_price="300">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="col-sm-3">
+      <div class="mb-5">
+        <h3>Cart</h3>
+        <div class="card cartList">
+          <div class="card-body">
+            <h5 class="card-title">Total: <span id="cart-total">0</span></h5>
+            <p class="card-text">Items in cart:</p>
+            <ul id="cart-items"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="mb-5">
+        <h3>Delivery Details</h3>
+        <div class="col">
+          <form action="http://sirjm.infinityfreeapp.com/checkout.php" method="GET">
+            <div class="form-group mb-2">
+              <label for="cust_name">Name</label>
+              <input type="text" class="form-control" id="cust_name" name="cust_name" required>
+            </div>
+            <div class="form-group mb-2">
+              <label for="cust_addr">Delivery Address</label>
+              <input type="text" class="form-control" id="cust_addr" name="cust_addr" required>
+            </div>
+            <div class="form-group mb-2">
+              <label for="cust_email">E-Mail Address</label>
+              <input type="text" class="form-control" id="cust_email" name="cust_email" required>
+            </div>
+            <input type="hidden" name="cust_order" id="cust_order">
+            <button type="submit" class="btn btn-primary mb-6">Order Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="pt-3 pb-3 mb-0">
+    <a href="index.html"><img src="hsrlogo.png" alt="hsr" height="75"></a>
+  </footer>
+  <script>
+    var cart = [];
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        cart.push({
+          prod_name: button.dataset.prod_name,
+          prod_price: parseInt(button.dataset.prod_price)
+        });
+
+        const cartTotal = calculateTotal();
+        document.getElementById('cart-total').textContent = formatPrice(cartTotal)
+
+        const cartItems = document.getElementById('cart-items');
+        cartItems.innerHTML = '';
+        cart.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = item.prod_name + ' - ' + formatPrice(item.prod_price);
+          cartItems.appendChild(li);
+          const button = document.createElement('button');
+          button.textContent = "Remove";
+          cartItems.appendChild(button);
+          // add a click event listener to the button
+          button.addEventListener('click', () => {
+            // get the index of the button in the array
+            const index = cart.indexOf(cartItems);
+            if (index > -1) {
+              // remove the button from both the array and the DOM
+              cart.splice(index, 1);
+              button.remove();
+            }
+          });
+        });
+
+        document.getElementById('cust_order').value = JSON.stringify(cart);
+
+
+      });
+    });
+
+    function calculateTotal() {
+      let total = 0;
+      for (let i = 0; i < cart.length; i++) {
+        let item = cart[i];
+        let itemTotal = parseFloat(item.prod_price);
+        total += itemTotal;
+      }
+      return total;
+    }
+
+    function formatPrice(price) {
+      return "Php " + price.toLocaleString('en-PH', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    }
+    function removeItem() {
+      cart.splice(i, 1)
+    }
+  </script>
+</body>
+
+</html>
